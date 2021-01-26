@@ -1,0 +1,443 @@
+* {box-sizing:border-box}
+
+h1
+{
+    font-family: 'Eras ITC';
+    color: #FFFFFF;
+}
+h2
+{
+    font-family: 'Eras ITC';
+    color: #FFFFFF;
+}
+h3
+{
+    font-family: 'Eras ITC';
+    color: #FFFFFF;
+}
+
+p
+{
+    font-family: 'Dubai Light';
+    color: #FFFFFF;
+}
+
+body
+{
+    margin: 0px;
+    height: 100%;
+}
+/* Slideshow container */
+.slideshow-container
+{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: #666666;
+}
+.slideshow-container .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 1200px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.8));
+}
+.arrow
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-top: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    float: left;
+    padding: 24px 24px;
+    color: #ffffff;
+    background-color: #002366;
+}
+.arrow:hover
+{
+    background-color: #4269FF;
+}
+.right
+{
+    position: absolute;
+    top: 0;
+    left: 97%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.slide_images
+{
+    display: block;
+    object-fit: cover;
+    height: 800px;
+    max-height: 800px;
+    width: 100%;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.center_logo 
+{
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    height: 50%;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.animate-left
+{
+    position:relative;
+    animation:animateleft 10s linear infinite;
+    height: auto;
+}
+@keyframes animateleft
+{
+    0% {
+        transform: translate(100%, 0);
+        opacity:0;
+    }
+    10%
+    {
+        transform: translate(0px, 0);
+        opacity:1;
+    }
+    90%
+    {
+        transform: translate(0px, 0);
+        opacity:1;
+    }
+    100% {
+        transform: translate(-100%, 0);
+        opacity:0;
+    }
+}
+
+.header-menu
+{
+    padding-bottom: 5px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+}
+.header
+{
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(65,105,255,0.6);
+    margin-left: auto;
+    margin-right: auto;
+}
+.header .closebtn
+{
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 0px 20px;
+    color: #ffffff;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.header .navbar
+{
+    display: table;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.header .navbar a
+{
+    border-bottom: solid 4px #002366;
+    color: #FFFFFF;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+.header .navbar a:not(.logo):hover
+{
+    background-color: rgba(255,255,255,0.6);
+    color: #4269FF;
+    border-bottom: solid 4px #4269FF;
+}
+
+.header .navbar .logo 
+{
+    padding-bottom: 8px;
+}
+.header .navbar .logo img
+{
+    max-height: 42px;
+    display: block;
+}
+.header .navbar a
+{
+    position: relative;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    float: left;
+    padding: 0px 24px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer-menu
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.footer
+{
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    background-color: #002366;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 5%;
+}
+.footer div
+{
+    display: table-cell;
+    width: 35%;
+    max-width: 35%;
+}
+.footer .navbar
+{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.footer .navbar a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    float: left;
+    position: relative;
+    line-height: 50px;
+    padding: 0px 24px;
+    margin: 0;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+.footer .navbar a:not(.logo):hover
+{
+    background-color: #ffffff;
+    color: #4269FF;
+}
+.footer .navbar a img
+{
+    width: 64px;
+    margin: 0px;
+}
+
+.footer .socialbar
+{
+    overflow: hidden;
+    margin-right: auto;
+}
+.footer .socialbar a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    float: left;
+    position: relative;
+    line-height: 50px;
+    padding: 0px 20px;
+    padding-top: 20px;
+    margin: 0;
+    color: #ffffff;
+    filter: brightness(1000%);
+    transition: brightness 0.2s ease-in-out;
+}
+.footer .socialbar a:hover
+{
+    filter: brightness(100%);
+}
+
+.footer .socialbar a img
+{
+    width: 64px;
+    max-width: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .spacer
+{
+    display: inline-block;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: 128px;
+}
+.margin
+{
+    width: 1400px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row
+{
+    display: flex;
+}
+.column
+{
+    flex: 1;
+    padding: 1em;
+}
+
+#menu
+{
+    display: none;
+    font-size: 48px;
+    color: #FFFFFF;
+    background-color: rgba(65,105,255,0.6);
+    padding: 10px;
+}
+
+@media screen and (max-width:900px)
+{
+    .footer
+    {
+        display:none;
+    }
+}
+@media screen and (max-width: 1100px)
+{
+    .header
+    {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #000816;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .header .navbar
+    {
+        margin: 0px;
+        width: 100%;
+    }
+    .header .navbar a
+    {
+        border-right: solid 8px #002366;
+        width: 100%;
+        border-bottom: none;
+        float: none;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        transition: 0.3s;
+    }
+    .header .navbar a:not(.logo):hover
+    {
+        background-color: #FFFFFF;
+        border-right: solid 8px #4269FF;
+        color: #4269FF;
+        border-bottom: none;
+    }
+    .header .navbar .logo
+    {
+        display: none;
+    }
+    .header .closebtn
+    {
+        display: block;
+    }
+    .header .closebtn:hover
+    {
+        background-color: #FFFFFF;
+        color: #4269FF;
+        display: block;
+    }
+    #menu
+    {
+        display: inline;
+    }
+
+    .footer
+    {
+        padding: 0px 23%;
+    }
+    .footer .navbar
+    {
+        display:none;
+    }
+    .footer .socialbar
+    {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer .socialbar a
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media screen and (max-width: 1700px)
+{
+    .footer div
+    {
+        display: table-cell;
+        width: 50%;
+        max-width: 50%;
+    }
+}
+.image-banner
+{
+    background-color:#666666;
+}
+.image-banner .row .column
+{
+    margin-left: 120px;
+}
+.rounded-img
+{
+    border-radius: 50%;
+}
+.fit
+{
+    width: 50%;
+}
+.center 
+{
+    text-align: center;
+    transform: translate(-25%, -50%);
+}
