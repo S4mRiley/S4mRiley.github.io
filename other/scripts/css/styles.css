@@ -74,10 +74,19 @@ body
 {
     display: block;
     object-fit: cover;
+    height: 600px;
+    max-height: 600px;
+    width: 100%;
+}
+.main_images
+{
+    display: block;
+    object-fit: cover;
     height: 800px;
     max-height: 800px;
     width: 100%;
 }
+
 /* Hide the images by default */
 .mySlides {
     display: none;
@@ -88,7 +97,8 @@ body
     display: block;
     margin: auto;
     margin-top: 150px;
-    height: 50%;
+    width: 800px;
+    max-width: 100%;
 }
 /* The dots/bullets/indicators */
 .dot {
