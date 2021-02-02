@@ -2,17 +2,18 @@
 
 h1
 {
-    font-family: 'Eras ITC';
+    font-family: 'Arial';
+    font-weight: bold;
     color: #FFFFFF;
 }
 h2
 {
-    font-family: 'Eras ITC';
+    font-family: 'Arial';
     color: #FFFFFF;
 }
 h3
 {
-    font-family: 'Eras ITC';
+    font-family: 'Dubai Light';
     color: #FFFFFF;
 }
 
@@ -51,10 +52,9 @@ body
 .arrow
 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    width: auto;
     display: block;
-    margin-top: 400px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     float: left;
@@ -68,11 +68,7 @@ body
 }
 .right
 {
-    position: absolute;
-    top: 0;
-    left: 97%;
-    margin-left:auto;
-    margin-right:auto;
+    right: 0;
 }
 .slide_images
 {
@@ -228,13 +224,13 @@ body
 .footer div
 {
     display: table-cell;
-    width: 35%;
-    max-width: 35%;
 }
 .footer .navbar
 {
-    overflow: hidden;
+    margin: auto;
     margin-top: 20px;
+    width: 500px;
+    max-width: 50%;
 }
 .footer .navbar a
 {
@@ -263,7 +259,6 @@ body
 .footer .socialbar
 {
     overflow: hidden;
-    margin-right: auto;
 }
 .footer .socialbar a
 {
@@ -419,6 +414,13 @@ body
         width: 50%;
         max-width: 50%;
     }
+    .footer .navbar
+    {
+        margin: auto;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 .image-banner
 {
@@ -440,4 +442,43 @@ body
 {
     text-align: center;
     transform: translate(-25%, -50%);
+}
+
+.shop
+{
+    background-color:#666666;
+}
+.shop .row
+{
+    padding: 16px;
+}
+.shop .odd
+{
+    background-color: #777777;
+}
+.shop .even
+{
+    background-color: #555555;
+}
+
+.shop-img
+{
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tag
+{
+    display: flex;
+}
+.info
+{
+    margin-left: 32px;
+}
+
+.price
+{
+    margin-left: 256px;
 }
