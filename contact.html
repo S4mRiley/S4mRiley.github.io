@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unique Walls</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" href="other/scripts/css/styles.css">
+        <link rel="icon" type="image/png" href="other/images/logo.png">
+    </head>
+    <body>
+        <!-- Page Contents-->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides animate-left">
+                <img src="other/images/slides/home/0.jpg" class="slide_images">
+            </div>
+    
+            <div class="mySlides animate-left">
+                <img src="other/images/slides/home/1.jpg" class="slide_images">
+            </div>
+    
+            <div class="mySlides animate-left">
+                <img src="other/images/slides/home/2.jpg" class="slide_images">
+            </div>
+            <div class="mySlides animate-left">
+                <img src="other/images/slides/home/3.jpg" class="slide_images">
+            </div>
+    
+            <div class="mySlides animate-left">
+                <img src="other/images/slides/home/4.jpg" class="slide_images">
+            </div>
+    
+            <div class="mySlides animate-left">
+                <img src="other/images/slides/home/5.jpg" class="slide_images">
+            </div>
+    
+            <div class="mySlides animate-left">
+                <img src="other/images/slides/home/6.jpg" class="slide_images">
+            </div>
+    
+            <div class="overlay"></div>
+            <div class="arrow" onclick="prevSlide()"><</div>
+            <div class="arrow right" onclick="nextSlide()">></div>
+        </div>
+        <script src="other/scripts/js/slideshow.js"></script>
+        <div style="background-color:#666666;">
+            <div class="margin row">
+                <div class="column">
+                    <div id="map"></div>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" async></script>
+                    <script src="other/scripts/js/contact.js"></script>
+                </div>
+                <div class="column">
+                    <p>
+                        Address Line 1<br>
+                        Address Line 2<br>
+                        Address Line 3<br>
+                        
+                        Phone: 01171 111111 <br>
+                        Fax: 01171 111111
+                    </p>
+                    <p>
+                        Contact Hours:<br>
+                        MON - 9:00 - 18:00<br>
+                        TUS - 9:00 - 18:00<br>
+                        WED - 9:00 - 18:00<br>
+                        THU - 9:00 - 18:00<br>
+                        FRI - 9:00 - 18:00<br>
+                        SAT - CLOSED<br>
+                        SUN - CLOSED
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shared Contents-->
+        <footer>
+            <div class="footer">
+                <div class="socialbar">
+                    <a href="https://twitter.com/JayUniquewalls"><img src="other/images/twitter.png" alt="Logo"></a>
+                    <a href="https://www.facebook.com/uniquewallsuk/"><img src="other/images/facebook.png" alt="Logo"></a>
+                    <a href="https://www.instagram.com/unique_walls/"><img src="other/images/instagram.png" alt="Logo"></a>
+                </div>
+                <div class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a class="logo"><img src="other/images/logo.png" alt="Logo"></a>
+                    <a href="shop.html">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </footer>
+        <header class="header-menu">
+            <div id="menu" onclick="openNav()">
+                ☰
+            </div>
+            <div class="header" id="mainbar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a class="logo"><img src="other/images/logo.png" alt="Logo"></a>
+                    <a href="shop.html">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com/JayUniquewalls"><img src="other/images/twitter.png" alt="Logo"></a>
+                    <a href="https://www.facebook.com/uniquewallsuk/"><img src="other/images/facebook.png" alt="Logo"></a>
+                    <a href="https://www.instagram.com/unique_walls/"><img src="other/images/instagram.png" alt="Logo"></a>
+                </div>
+            </div>
+        </header>
+        <script src="other/scripts/js/navbar.js"></script>
+    </body>
+</html>

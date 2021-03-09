@@ -1,0 +1,50 @@
+.shop
+{
+    background-color:#666666;
+}
+.shop .row
+{
+    padding: 16px;
+}
+.shop .odd
+{
+    background-color: #777777;
+}
+.shop .even
+{
+    background-color: #555555;
+}
+
+.shop-img
+{
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.storefront .row p
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    margin-left: auto;
+}
+
+.storefront .row button
+{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.storefront .row button:hover
+{
+    opacity: 0.7;
+}
